@@ -19,9 +19,9 @@ public function addPlayer($player){
 }
 
 public function displayNationality(){
-	$result = "Les joueur de nationalité sont $this :<br>";
+	$result = "Les joueur de nationalité $this sont :<br>";
 	foreach($this->_listPlayer as $player){
-		$result.=$player . "<br>";
+		$result.=$player ;
 	}
 	return $result;
 }
