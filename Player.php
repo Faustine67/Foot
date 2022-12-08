@@ -21,7 +21,7 @@ class Player
 	}
 	public function getPlayer()
 	{
-		return $this->_name . " " . $this->_firstname . " " . $this->_birthdate . " " . $this->_nationality . $this->_team . "<br>";
+		return $this->_name . " " . $this->_firstname . " " . $this->_birthdate . " " . $this->_nationality . $this->_team;
 	}
 
 	public function displayTeam()
@@ -31,6 +31,6 @@ class Player
 
 	public function __toString()
 	{
-		return $this->_name . " " . $this->_firstname . " " . $this->_birthdate . " " . $this->_nationality . $this->_team . "<br>";
+		return $this->_name . " " . $this->_firstname . " " . $this->_birthdate . " " . $this->_nationality . $this->_team;
 	}
 }
