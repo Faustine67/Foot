@@ -36,6 +36,9 @@ $joueur2 = new Player("Dimitri", "Payet", "29.03.1987", $nationality1, $team2); 
 $joueur3 = new Player("Pedro", "Ruiz", "30.03.2000", $nationality2, $team2); //OM, Real Madrid
 $joueur4 = new Player("Sergio", "Ramos", "30.03.1986", $nationality2, $team1); //PSG, Real Madrid
 
+
+$mercato1 = new Mercato($joueur1, $team1, "2022");
+
 "<p>";
 echo $joueur1->getPlayer() . "<br>";
 echo $joueur2->getPlayer() . "<br>";
@@ -55,3 +58,6 @@ echo $country1->displayCountry() . "<br>";
 echo $country2->displayCountry() . "<br>";
 echo $country3->displayCountry() . "<br>";
 "</p>";
+"<p>";
+echo $joueur1->displayMercato() . "<br>";
+echo $team1->displayMercato() . "<br>";

@@ -4,7 +4,7 @@ class Team
 {
 	private $_team;
 	private $_country;
-
+	private $_listMercato;
 
 	public function __construct($team, $country)
 	{
@@ -12,6 +12,7 @@ class Team
 		$this->_listathlete = [];
 		$this->_country = $country;
 		$this->_country->addTeam($this);
+		$this->_listMercato = [];
 	}
 
 	public function getTeam()
@@ -32,6 +33,19 @@ class Team
 		}
 		return $result;
 	}
+	public function addMercato($mercato)
+	{
+		$this->_listMercato[] = $mercato;
+	}
+	public function displayMercato()
+	{
+		$result = $this->getTeam();
+		foreach ($this->_listMercato as $mercato) {
+			$result .= $mercato . "<br>";
+		}
+		return $result;
+	}
+
 
 	public function displayCountry()
 	{
